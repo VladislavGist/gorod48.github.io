@@ -1,0 +1,361 @@
+extends modules/template
+
+block title 
+	title Page A
+
+block content
+
+	include modules/mixin
+
+
+	.row
+		.col-md-9.col-sm-9.col-xs-12
+			h1 Механик: воскрешение
+			.panel-heading.clearfix
+				ul.nav.nav-tabs.anchor
+					li.active: a(href="#date11") Описание
+					li: a(href="#date12") Афиша
+					li: a(href="#date14") Фотографии
+					li: a(href="#date15") Отзывы
+				ul.social-2
+					li: a.soc-ok(href="#" target="_blank")
+					li: a.soc-fb(href="#" target="_blank")
+					li: a.soc-vk(href="#" target="_blank")
+					li: a.soc-tw(href="#" target="_blank")
+
+			#date11.fon.text-block2.clearfix
+				.img.pull-left
+					img(src="upload/about.jpg" alt="")
+				p
+					b Категория: 
+					a(href="/") Фильмы
+
+				p
+					b Заведение: 
+					a(href="/") Молл
+
+				p 
+					b Жанр:
+					| драма, спорт
+				p
+					b Продолжительность: 
+					| 85 мин.
+				p
+					b Год выпуска: 
+					| 2016
+				p
+					b В прокате с: 
+					| 25 августа 2016 г.
+				p
+					b Режиссёр: 
+					| Николай Кудряшов
+				p
+					b Актёры: 
+					| Николай Кудряшов, Денис Никифоров, Ян Цапник, Владимир Епифанцев, Максим Коновалов, Андрей Семенов, Миxаил Малютин, Александр Шлеменко, Наталия Власова
+				br
+				p Cиквел боевика 2011 года с Джейсоном Стэтемом в главной роли, который, в свою очередь, был ремейком фильма 1972 года с Чарльзом Бронсоном. Профессиональный киллер Артур Бишоп решил завязать со своей работой, но вынужден вновь взяться за дело, когда враги похищают его девушку в исполнении Джессики Альбы. Чтобы ее спасти, ему нужно всего лишь убить трех самых опасных людей на планете, в числе которых герой Томми Ли Джонса. В фильме, как обычно, много трюков, взрывов и красивый прыжок со скалы.
+
+			.fon.iframe
+				<iframe width="" height="" src="https://www.youtube.com/embed/sLwhyRE0PC0" frameborder="0" allowfullscreen></iframe>
+
+			h2 Расписание фильма  “Механик: воскрешение”
+
+			#date12.panel-heading.clearfix
+				nav.navbar( role="navigation")
+					ul.nav.nav-tabs.navbar-nav.select-submenu.calendar
+						+nav_item_dropdown("#")( label="Сегодня")
+							+nav_item_tab("#date2") Сегодня 2
+							+nav_item_tab("#date3") Завтра
+							+nav_item_tab("#date4") Послезавтра
+							+nav_item_dropdown( "#" )(label="Выбрать дату") 
+								li
+									.datepicker
+									
+					ul.nav.nav-tabs.navbar-nav.select-submenu.audience
+						+nav_item_dropdown( "#" )( label="Кому?")
+							+nav_item_tab("#date2") Детям
+							+nav_item_tab("#date3") Детям 2
+							+nav_item_tab("#date4") Детям 3
+			.panel-body.fon
+				.tab-content
+					.tab-pane.fade.in.active#date12
+						.schedule
+							.row
+								.col-md-3.col-sm-12.col-xs-12
+									h3
+										a(href="/") Кинотеатр “Молл”
+									.address Ул. Терешкова, 53
+								.col-md-9.col-sm-12.col-xs-12
+									.sch-block.clearfix
+										.type
+											| 2D
+										.sch-list
+											.sch-item: a.disable(href="javascript:void(0);") 10:30
+											.sch-item: a.disable(href="javascript:void(0);") 12:30
+											.sch-item: a.disable(href="javascript:void(0);") 14:30
+											.sch-item: a(href="javascript:void(0);") 16:30
+											.sch-item: a(href="javascript:void(0);") 18:30
+											.sch-item: a.active(href="javascript:void(0);") 20:30
+											.sch-item: a(href="javascript:void(0);") 22:30
+											.sch-item: a(href="javascript:void(0);") 23:30
+											.sch-item: a(href="javascript:void(0);") 16:30
+											.sch-item: a(href="javascript:void(0);") 18:30
+											.sch-item: a.active(href="javascript:void(0);") 20:30
+											.sch-item: a(href="javascript:void(0);") 22:30
+											.sch-item: a(href="javascript:void(0);") 23:30
+									.sch-block.clearfix
+										.type
+											| 3D
+										.sch-list
+											.sch-item: a.disable(href="javascript:void(0);") 10:30
+											.sch-item: a.disable(href="javascript:void(0);") 12:30
+											.sch-item: a.disable(href="javascript:void(0);") 14:30
+											.sch-item: a(href="javascript:void(0);") 16:30
+											.sch-item: a(href="javascript:void(0);") 18:30
+											.sch-item: a.active(href="javascript:void(0);") 20:30
+											.sch-item: a(href="javascript:void(0);") 22:30
+											.sch-item: a(href="javascript:void(0);") 23:30
+									.sch-block.clearfix
+										.type
+											| ATMOS
+										.sch-list
+											.sch-item: a.disable(href="javascript:void(0);") 10:30
+											.sch-item: a.disable(href="javascript:void(0);") 12:30
+											.sch-item: a.disable(href="javascript:void(0);") 14:30
+											.sch-item: a(href="javascript:void(0);") 16:30
+											.sch-item: a(href="javascript:void(0);") 18:30
+											.sch-item: a.active(href="javascript:void(0);") 20:30
+											.sch-item: a(href="javascript:void(0);") 22:30
+											.sch-item: a(href="javascript:void(0);") 23:30
+						.schedule
+							.row
+								.col-md-3.col-sm-12.col-xs-12
+									h3
+										a(href="/") Кинотеатр “Флинт”
+									.address Ул. Терешкова, 53
+								.col-md-9.col-sm-12.col-xs-12
+									.sch-block.clearfix
+										.type
+											| 2D
+										.sch-list
+											.sch-item: a.disable(href="javascript:void(0);") 10:30
+											.sch-item: a.disable(href="javascript:void(0);") 12:30
+											.sch-item: a.disable(href="javascript:void(0);") 14:30
+											.sch-item: a(href="javascript:void(0);") 16:30
+											.sch-item: a(href="javascript:void(0);") 18:30
+											.sch-item: a.active(href="javascript:void(0);") 20:30
+											.sch-item: a(href="javascript:void(0);") 22:30
+											.sch-item: a(href="javascript:void(0);") 23:30
+											.sch-item: a(href="javascript:void(0);") 16:30
+											.sch-item: a(href="javascript:void(0);") 18:30
+											.sch-item: a.active(href="javascript:void(0);") 20:30
+											.sch-item: a(href="javascript:void(0);") 22:30
+											.sch-item: a(href="javascript:void(0);") 23:30
+									.sch-block.clearfix
+										.type
+											| 3D
+										.sch-list
+											.sch-item: a.disable(href="javascript:void(0);") 10:30
+											.sch-item: a.disable(href="javascript:void(0);") 12:30
+											.sch-item: a.disable(href="javascript:void(0);") 14:30
+											.sch-item: a(href="javascript:void(0);") 16:30
+											.sch-item: a(href="javascript:void(0);") 18:30
+											.sch-item: a.active(href="javascript:void(0);") 20:30
+											.sch-item: a(href="javascript:void(0);") 22:30
+											.sch-item: a(href="javascript:void(0);") 23:30
+						.schedule
+							.row
+								.col-md-3.col-sm-12.col-xs-12
+									h3
+										a(href="/") Кинотеатр “Флинт”
+									.address Ул. Терешкова, 53
+								.col-md-9.col-sm-12.col-xs-12
+									.sch-block.clearfix
+										.type
+											| 2D
+										.sch-list
+											.sch-item: a.disable(href="javascript:void(0);") 10:30
+											.sch-item: a.disable(href="javascript:void(0);") 12:30
+											.sch-item: a.disable(href="javascript:void(0);") 14:30
+											.sch-item: a(href="javascript:void(0);") 16:30
+											.sch-item: a(href="javascript:void(0);") 18:30
+											.sch-item: a.active(href="javascript:void(0);") 20:30
+											.sch-item: a(href="javascript:void(0);") 22:30
+											.sch-item: a(href="javascript:void(0);") 23:30
+											.sch-item: a(href="javascript:void(0);") 16:30
+											.sch-item: a(href="javascript:void(0);") 18:30
+											.sch-item: a.active(href="javascript:void(0);") 20:30
+											.sch-item: a(href="javascript:void(0);") 22:30
+											.sch-item: a(href="javascript:void(0);") 23:30
+									.sch-block.clearfix
+										.type
+											| 3D
+										.sch-list
+											.sch-item: a.disable(href="javascript:void(0);") 10:30
+											.sch-item: a.disable(href="javascript:void(0);") 12:30
+											.sch-item: a.disable(href="javascript:void(0);") 14:30
+											.sch-item: a(href="javascript:void(0);") 16:30
+											.sch-item: a(href="javascript:void(0);") 18:30
+											.sch-item: a.active(href="javascript:void(0);") 20:30
+											.sch-item: a(href="javascript:void(0);") 22:30
+											.sch-item: a(href="javascript:void(0);") 23:30
+
+
+					.tab-pane.fade#date2
+
+					.tab-pane.fade#date3 
+
+
+			#date14
+				h2 Фотогалерея ТРЦ “Малибу”
+			.row.photo
+				.col-md-4.col-sm-6.col-xs-6
+					.fon
+						img.materialboxed(src="upload/photo-1.jpg" alt="")
+				.col-md-4.col-sm-6.col-xs-6
+					.fon
+						img.materialboxed(src="upload/photo-2.jpg" alt="")
+				.col-md-4.col-sm-6.col-xs-6
+					.fon
+						img.materialboxed(src="upload/photo-3.jpg" alt="")
+				.col-md-4.col-sm-6.col-xs-6
+					.fon
+						img.materialboxed(src="upload/photo-1.jpg" alt="")
+				.col-md-4.col-sm-6.col-xs-6
+					.fon
+						img.materialboxed(src="upload/photo-2.jpg" alt="")
+				.col-md-4.col-sm-6.col-xs-6
+					.fon
+						img.materialboxed(src="upload/photo-3.jpg" alt="")
+
+			#date15
+				h2 Отзывы о ТРЦ “Малибу”
+			.fon.rec-block
+				form.rec-item.clearfix(action="")
+					.user-img
+					h3.events_titile Написать отзыв
+					.name-s Константин Черновалов
+					textarea(rows="" cols="" placeholder="...")
+					input.btn2(type="button" value="Опубликовать")
+
+				.rec-item.clearfix
+					.user-img
+						img(src="upload/user.png" alt="")
+					header
+						h3
+							| Алексей Двуреченков
+						.date 22 октября 2016
+						.rating.clearfix
+							.minus.clearfix
+								a(href="javascript:void(0);") -3
+									span
+							.plus.clearfix
+								a(href="javascript:void(0);") +11
+									span
+					.text
+						| Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки форм развития. Товарищи! новая модель организационной деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же укрепление и развитие структуры играет важную роль в формировании новых предложений. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности требуют
+					a.answer(href="javascript:void(0);") ответить
+				.rec-item.clearfix
+					.user-img
+						img(src="upload/user.png" alt="")
+					header
+						h3
+							| Алексей Двуреченков
+						.date 22 октября 2016
+						.rating.clearfix
+							.minus.clearfix
+								a(href="javascript:void(0);") -3
+									span
+							.plus.clearfix
+								a(href="javascript:void(0);") +11
+									span
+					.text
+						| Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки форм развития. Товарищи! новая модель организационной деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же укрепление и развитие структуры играет важную роль в формировании новых предложений. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности требуют
+					a.answer(href="javascript:void(0);") ответить
+				.rec-item.clearfix
+					.user-img
+						img(src="upload/user.png" alt="")
+					header
+						h3
+							| Алексей Двуреченков
+						.date 22 октября 2016
+						.rating.clearfix
+							.minus.clearfix
+								a(href="javascript:void(0);") -3
+									span
+							.plus.clearfix
+								a(href="javascript:void(0);") +11
+									span
+					.text
+						| Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки форм развития. Товарищи! новая модель организационной деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же укрепление и развитие структуры играет важную роль в формировании новых предложений. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности требуют
+					a.answer(href="javascript:void(0);") ответить
+					.rec-item.clearfix
+						.user-img
+							img(src="upload/user.png" alt="")
+						header
+							h3
+								| Алексей Двуреченков
+							.date 22 октября 2016
+							.rating.clearfix
+								.minus.clearfix
+									a(href="javascript:void(0);") -3
+										span
+								.plus.clearfix
+									a(href="javascript:void(0);") +11
+										span
+						.text
+							| Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки форм развития. Товарищи! новая модель организационной деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же укрепление и развитие структуры играет важную роль в формировании новых предложений. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности требуют
+						a.answer(href="javascript:void(0);") ответить
+					.rec-item.clearfix
+						.user-img
+							img(src="upload/user.png" alt="")
+						header
+							h3
+								| Алексей Двуреченков
+							.date 22 октября 2016
+							.rating.clearfix
+								.minus.clearfix
+									a(href="javascript:void(0);") -3
+										span
+								.plus.clearfix
+									a(href="javascript:void(0);") +11
+										span
+						.text
+							| Разнообразный и богатый опыт сложившаяся структура организации представляет собой интересный эксперимент проверки форм развития. Товарищи! новая модель организационной деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же укрепление и развитие структуры играет важную роль в формировании новых предложений. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности требуют
+						a.answer(href="javascript:void(0);") ответить
+				a.readmore(href="#")
+					span.clearfix
+						span.film-button
+						| Еще отзывы
+			
+
+
+		.col-md-3.col-sm-3.hidden-xs.right-side
+			.banner-s.margin0
+				a(href="#"): img(src="upload/banner-right.jpg" alt="")
+			.banner-s
+				a(href="#"): img(src="upload/banner-s.jpg" alt="")
+			.reading.fon
+				header: a(href="#") Сейчас читают
+				.item
+					a(href="#") Водители в Липецке поддались массовому психозу (ВИДЕО)
+					.time
+						| 1,5 часа
+				.item
+					a(href="#") В Липецке медсестру вынудили уволиться за фото в социальной сети
+					.time
+						| 1,5 часа
+				.item
+					a(href="#") После рекордной жары в Липецке ждут грозу
+					.time
+						| 1,5 часа
+				.item
+					a(href="#") Липецкая студентка задержана за поджог автомобиля
+					.time
+						| 1,5 часа
+				.item
+					a(href="#") Водители в Липецке поддались массовому психозу (ВИДЕО)
+					.time
+						| 1,5 часа
+			.fon
+				img(src="upload/yandex.jpg" alt="")

@@ -1,0 +1,97 @@
+//- Navbar mixins
+mixin nav(id, style)
+  - var style = (typeof style === 'undefined') ? "default" : style
+  nav( role="navigation", class=["navbar", "navbar-" + style] )
+    .navbar-header
+      button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#" + id, aria-expanded="true", aria-controls="navbar")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+
+    .collapse.navbar-collapse( id=id )
+      ul.nav.navbar-nav
+        block
+ 
+mixin nav_item(href, active)
+  li(class=active): a( href=href )
+    block
+
+mixin nav_item_tab(href, active)
+  li(class=active): a( href=href data-toggle="tab")
+    block
+ 
+mixin nav_item_dropdown(href, active)
+  li(class=[active])
+    a(href=href)= attributes.label
+    ul
+      block
+mixin nav_item_sub(href, active)
+  li(class=[active])
+    a(href=href)= attributes.label
+    block
+ 
+mixin nav_divider
+  li.divider
+ 
+mixin nav_header
+  li.dropdown-header
+    block
+ 
+//- End navbar mixins
+//-film
+
+mixin film(href, src, name, genre, id, parentname, name1)
+  - var name1 = (typeof name1 === 'undefined') ? "фильм" : name1
+  .film.panel
+    a( href=href )
+      img(src=src alt="")
+    div
+      a(href="/")= name1
+      header 
+        .name= name
+        .genre= genre
+        .panel-collapse.collapse(id="film-"+id )
+          .text: p 
+            block
+      footer
+        .clearfix
+          a(href="/").comment 12
+          a.btn.more( data-parent="#"+parentname data-toggle="collapse" href="#film-"+id ) Подробнее
+          a.btn.link(href="#" ) Подробнее
+//-end film
+
+//-film
+
+mixin inst(href, src, name, address, name1)
+  - var name1 = (typeof name1 === 'undefined') ? "Ресторан" : name1
+  .inst
+    a( href=href )
+      img(src=src alt="")
+    div
+      p= name1
+      header 
+        .name= name
+        .genre= address
+      footer
+        .clearfix
+          .comment 12
+          a.btn.more(href="#" ) Подробнее
+//-end film
+
+//-recall
+mixin recall(name)
+  .recall
+    header
+      div.clearfix
+        a.recall-img(href="#"): img(src="upload/recall-img.jpg" alt="")
+        a(href="#")= name
+    .text: p
+      block
+    footer
+      .clearfix
+        .comment 12
+        .date 22 октября 2016
+
+  
+//- end recall

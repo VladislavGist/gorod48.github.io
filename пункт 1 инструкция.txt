@@ -1,0 +1,81 @@
+//HTML
+
+//родительский блок содержащий все элементы. ему добавляем .loadingBlock
+<div class="row loadingBlock">
+
+	//дочерний блок. каждому из них добавляем .card
+	<div class="col-md-4 col-sm-6 col-xs-12 card">
+    <div class="film panel"><a href="#"><img src="upload/film-1.jpg" alt=""></a>
+      <div><a href="/">фильм</a>
+
+        <header> 
+          <div class="name">Не дыши</div>
+          <div class="genre">боевик, триллер, криминал </div>
+          <div class="panel-collapse collapse" id="film-1">
+            <div class="text">
+              <p> Грабители забираются в дом одинокого слепого старика с целью украсть огромную сумму, которая, по слухам, спрятана где-то внутри. Казалось бы — что может быть проще, чем вынести деньги из дома практически беспомощного человека. Но они жестоко ошибаются: преследуемый становится преследователем. И тайна, которую он хранит, гораздо страшнее, чем обычные пенсионные накопления.
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <footer>
+          <div class="clearfix"><a class="comment" href="/">12</a><a class="btn more" data-parent="#undefined" data-toggle="collapse" href="#film-1">Подробнее</a><a class="btn link" href="#">Подробнее</a></div>
+        </footer>
+
+      </div>
+    </div>
+	</div>
+          
+  //кнопка "ещё". ей добавляем .loadingBtn         
+  <div class="col-md-12 col-sm-12 xol-xs-12 loadingBtn">
+  	<a class="readmore" href="#">
+  		<span class="clearfix">
+  			<span class="film-button"></span>
+  			Еще фильмы
+  		</span>
+  	</a>
+  </div>
+
+</div>
+
+
+//CSS
+* Добавить правило в конец таблицы стилей
+
+.addVisible {
+	display: block !important;
+}
+
+
+//JS
+* Добавить функцию и активировать в уже созданном $(document).ready()
+! функция универсальа и будет работать для всех подобных конструкций, главное задать классы в HTML
+
+function loadingCards() {
+  let cnt = 3;
+  let card = $(".loadingBlock").find(".card");
+
+  $(card).slideUp(0);
+  $(card[0]).addClass("addVisible");
+  $(card[1]).addClass("addVisible");
+  $(card[2]).addClass("addVisible");
+
+
+  $(".loadingBtn").click(function(e) {
+    if($(this).parent(".loadingBlock").find(".card").length > cnt ) {
+      let card = $(this).parent(".loadingBlock").find(".card");
+      
+      $(card[cnt]).addClass("addVisible").slideDown();
+      cnt++;
+      $(card[cnt]).addClass("addVisible").slideDown();
+      cnt++;
+      $(card[cnt]).addClass("addVisible").slideDown();
+      cnt++;
+      
+      return false;
+    }
+
+    return false;
+  })
+};

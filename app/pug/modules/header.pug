@@ -1,0 +1,31 @@
+include mixin
+#header
+	.container
+		.banner-top
+			a(href="#"): img(src="upload/banner-top.jpg" alt="")
+		.header
+			.header1
+				.row
+					.col-md-6.col-sm-6.col-xs-7.col-xxs-10
+						.logo-h
+							a(href="#")
+						ul.social
+							li: a.vk(href="#")
+							li: a.fb(href="#")
+							li: a.tw(href="#")
+					.col-md-6.col-sm-6.col-xs-5.col-xxs-2
+						ul.date-block.clearfix
+							li.cens: span
+							li.evro: a(href="#") € 71.64
+							li.dollar: a(href="#") $ 64.7
+							li.temp: a(href="#") 
+									span 
+									| +16
+							li.date: a(href="#") 
+									span 
+									| Вт. 28 июня 2016 г.
+			.main-menu
+				.row
+					include menu
+						
+

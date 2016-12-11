@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto.eot');
+    src: url('../fonts/roboto.eot') format('embedded-opentype'),
+         url('../fonts/roboto.woff2') format('woff2'),
+         url('../fonts/roboto.woff') format('woff'),
+         url('../fonts/roboto.ttf') format('truetype'),
+         url('../fonts/roboto.svg#roboto') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/robotobold.eot');
+    src: url('../fonts/robotobold.eot') format('embedded-opentype'),
+         url('../fonts/robotobold.woff2') format('woff2'),
+         url('../fonts/robotobold.woff') format('woff'),
+         url('../fonts/robotobold.ttf') format('truetype'),
+         url('../fonts/robotobold.svg#robotobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'RalewayMedium';
+    src: url('../fonts/ralewaymedium.ttf');
+  font-style: normal;
+}
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('../fonts/ralewaybold.ttf');
+  font-style: normal;
+}
+@font-face {
+    font-family: 'RalewayExtraBold';
+    src: url('../fonts/ralewayextrabold.ttf');
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('../fonts/robotolight.eot');
+    src: url('../fonts/robotolight.eot') format('embedded-opentype'),
+         url('../fonts/robotolight.woff2') format('woff2'),
+         url('../fonts/robotolight.woff') format('woff'),
+         url('../fonts/robotolight.ttf') format('truetype'),
+         url('../fonts/robotolight.svg#robotolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

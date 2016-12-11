@@ -1,0 +1,1101 @@
+//header
+.banner-top
+	margin: 0 0 36px 0
+	img
+		width: 100%
+.header
+	background: #fff
+	box-shadow: 0 5px 25px -15px rgba(0, 0, 0, .5)
+
+.header1
+	border-bottom: 2px solid #1E9D42
+	padding: 8px 23px 12px
+
+
+.logo-h
+	float: left
+	margin: 0 30px 0 0
+	a
+		display: block
+		width: 115px
+		height: 29px
+		background: url("../img/logo-h.png") 0 0 no-repeat
+		background-size: contain
+	@media (max-width: 768px)
+		margin: 0 10px 0 20px
+		a
+			width: 105px
+			height: 26px
+			margin: 3px 0px 0 0px
+
+.social
+	margin: 8px 0 0 0
+	padding: 0
+	float: left
+	li		
+		margin: 0 11px 0 0
+		display: inline-block
+		@media (max-width: 640px)
+			margin: 2px 5px 0 0
+		a
+			display: block
+			width: 15px
+			height: 14px
+			background: url("../img/social.png") 0 0 no-repeat
+			transition: none
+		.vk
+			background-position: 0 0
+			&:hover, &:focus
+				background-position: 0 -14px
+		.fb
+			background-position: -17px 0
+			&:hover, &:focus
+				background-position: -17px -14px
+		.tw
+			background-position: -34px 0
+			&:hover, &:focus
+				background-position: -34px -14px
+.date-block
+	margin: 5px 0 0 
+	li
+		float: right		
+		white-space: nowrap
+		height: 20px
+		font: 13px/1.7 $fontRB
+		a, a:visited
+			text-decoration: none
+	.date
+		margin: 0 41px 0 0px
+		color: #1E9D42
+		a, a:visited, a:hover, a:focus
+			color: #1E9D42
+		span
+			display: block
+			float: left
+			margin: 0 12px 0 0px
+			width: 19px
+			height: 20px
+			background: url("../img/date-block.png") 0 -3px no-repeat
+		@media (max-width: 1023px)
+			display: none
+	.temp
+		margin: 0 28px 0 0px
+		color: #1E9D42
+		a, a:visited, a:hover, a:focus
+			color: #1E9D42
+		span
+			display: block
+			float: left
+			margin: 0 10px 0 0px
+			width: 19px
+			height: 20px
+			background: url("../img/date-block.png") -19px -3px no-repeat
+		@media (max-width: 640px)
+			display: none
+	.dollar
+		margin: 0 12px 0 0px
+		color: #DC1010
+		a, a:visited, a:hover, a:focus
+			color: #DC1010
+		@media (max-width: 640px)
+			display: none
+	.evro
+		margin: 0 14px 0 0px
+		color: #B8C80A
+		a, a:visited, a:hover, a:focus
+			color: #B8C80A
+		@media (max-width: 640px)
+			display: none
+	.cens
+		span
+			display: block
+			width: 25px
+			height: 25px
+			background: url("../img/date-block.png") -39px 0px no-repeat
+.col-xxs-10
+	@media (max-width: 640px)
+		width: 83.33333333%	
+.col-xxs-2
+	@media (max-width: 640px)
+		width: 16.66666667%
+.head-block
+	margin: 12px 27px 0 0
+	padding: 0
+	li
+		width: 25px
+		height: 25px
+		margin: 0 0 0 17px
+		padding: 0
+		float: right
+		a
+			display: block
+			width: 25px
+			height: 25px
+			border-radius: 100%
+			background: url("../img/sprite-header.png") 0 0 no-repeat
+	.search
+		a
+			background-position: 0px 0
+	.login
+		a
+			background-position: -25px 0
+	.offer
+		a
+			background-position: -50px 0
+
+/*** banner-right ***/
+.banner-s
+	border-radius: 2px
+	overflow: hidden
+	margin: 20px 0 0 0
+	box-shadow: 0 1px 2px rgba(204, 204, 204, 0.25)
+	img
+		width: 100%
+
+
+/*** film ***/
+
+.panel-body
+	.flexBlock
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-between
+		a
+			margin-top: 15px
+
+.film
+	height: 400px
+	background: #fff
+	position: relative
+	margin: 20px 0 0
+	overflow: hidden
+	border-radius: 2px
+	box-shadow: 0 1px 2px rgba(204, 204, 204, 0.25)
+	@media (max-width: 768px)
+		height: 160px
+		.collapse, .collapsing, .collapse.in
+			display: none !important
+	&>a:hover + div
+		bottom: -142px
+	img
+		width: 100%
+		@media (max-width: 768px)
+			max-width: 30%
+			float: left
+			@media (max-width: 320px)
+				min-width: 109px
+
+	&>div
+		padding: 12px 21px
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 10
+		background: #fff
+		transition: all .3s ease
+		@media (max-width: 768px)
+			left: 31%
+			top: 0
+		@media (max-width: 320px)
+			left: 44%
+		&>p
+			font: 11px/1 $font
+			color: #1E9D42
+			margin: -1px 0 0
+		&>a
+			text-decoration: none
+		
+		.comment
+			float: left
+			height: 14px
+			padding: 0 0 0 20px
+			margin: 5px 0  0 0
+			color: #231F20
+			font: 11px/1.2 $font
+			background: url("../img/film-comment.png") 0 0 no-repeat
+			text-decoration: none
+			@media (max-width: 467px)
+				width: 100%
+				margin-bottom: 7px
+
+		.btn
+			float: right
+			@media (max-width: 467px)
+				float: left
+
+		footer
+			margin: 10px 0 0
+			.link
+				display: none
+		.active
+			.more
+				display: none
+			.link
+				display: block
+		header
+			.genre
+				font: 11px/1.2 $font
+				margin: 6px 0 0
+				height: 26px
+				overflow: hidden
+				opacity: .5
+
+			.name
+				font: 16px/1 $fontRM
+				color: #4F4C4D
+				margin: 10px 0 0
+				height: 32px
+				overflow: hidden
+			.text
+				max-height: 250px
+				margin: 8px 0 0px 0
+				overflow: hidden
+				p
+					margin: 0
+					padding: 0
+	
+
+
+
+/*** readmore ***/
+.readmore
+	display: block
+	margin: 20px 0 0
+	height: 60px
+	font: 16px/52px $fontRM
+	color: #B5B5B5
+	text-decoration: none
+	background: #fff
+	overflow: hidden
+	border-radius: 2px
+	box-shadow: 0 1px 2px rgba(204, 204, 204, 0.25)
+	text-align: center
+	.clearfix
+		display: inline-block
+	.film-button
+		float: left
+		margin: 12px 10px 0 0
+		width: 32px
+		height: 32px
+		display: block
+		background: url("../img/film-button.png") 0 0 no-repeat
+	&:visited
+		text-decoration: none
+		color: #B5B5B5
+	&:hover, &:focus
+		color: $colorLink2
+		span.film-button
+			background: url("../img/film-button-h.png") 0 0 no-repeat
+			animation: rotating 2s linear infinite
+	
+
+@-webkit-keyframes rotating /* Safari and Chrome */
+	from
+		transform: rotate(0deg)
+	to
+		transform: rotate(360deg)
+@keyframes rotating
+	from
+		transform: rotate(0deg)
+	to
+		transform: rotate(360deg)
+
+.title
+	h2
+		display: inline-block
+		margin-right: 12px
+	&>a, &>a:visited
+		font: 14px/1 $fontRM
+		text-decoration: none
+	&>a:hover, &>a:focus
+		text-decoration: underline
+	.pull-right
+		margin: 42px 4px 15px 0
+
+	.flexBlock
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		align-items: center
+		justify-content: space-between
+		.wrap:last-child
+			a
+				margin-top: 15px
+				display: block
+.flexBlock
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	a
+		margin-top: 15px
+
+
+.reading
+	header
+		border-bottom: 1px solid #F5F5F5
+		padding: 22px 22px 21px
+		a, a:visited
+			font: 14px/1.2 $fontRB
+			text-decoration: none
+			color: #4F4C4D
+	.item
+		margin: 22px 23px 27px
+		line-height: 1.3
+		a, a:visited
+			color: #7C7C7C
+		a:hover, a:focus
+			color: #1E9D42
+		.time
+			height: 12px
+			position: relative
+			margin: 10px 0 0
+			padding: 0 0 0 22px
+			line-height: 1
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				left: 3px
+				top: 0
+				width: 12px
+				height: 12px
+				background: url("../img/reading-time.png") 0 0 no-repeat
+.fon
+	background: #fff
+	overflow: hidden
+	border-radius: 2px
+	box-shadow: 0 1px 2px rgba(204, 204, 204, 0.25)
+	margin: 20px 0 0
+
+/*** recall ***/
+.row.recall-block>div
+	&:nth-child(1), &:nth-child(2), &:nth-child(3)
+		.recall
+			border-top: 0px
+	@media (max-width: 992px)
+		&:nth-child(3) .recall
+			border-top: 1px solid #000
+
+.recall
+	margin: 0px 20px 0
+	font: 13px/1.2 $font
+	border-top: 1px solid #000
+	padding: 23px 0 20px
+	
+	header
+		font: 16px/1.2 $fontRM
+		color: #4F4C4D
+		margin: 0 0 14px 0
+		span
+			height: 40px
+			display: flex
+			align-items: center
+			overflow: hidden
+		a, a:visited 
+			color: #4F4C4D
+			text-decoration: none
+			max-height: 40px
+		a:hover, a:focus
+			text-decoration: none
+			color: #1E9D42
+		.clearfix			
+			position: relative
+			padding: 0 0 0 52px
+			height: 40px
+			overflow: hidden
+		.recall-img
+			display: block
+			position: absolute
+			left: 0
+			top: 0
+			z-index: 2
+			width: 40px
+			height: 40px
+			border-radius: 100%
+	footer
+		margin: 14px 0 0
+
+	.date 
+		float: right
+		font: 11px/1.2 $font
+		opacity: .5
+		margin: 3px 18px 0 0	
+	.comment
+		float: left
+		height: 14px
+		padding: 0 0 0 20px
+		margin: 5px 0  0 4px
+		color: #231F20
+		font: 11px/1.2 $font
+		background: url("../img/film-comment.png") 0 0 no-repeat
+
+	
+	.text
+		height: 76px
+		overflow: hidden
+		@media (max-width: 780px)
+			height: auto
+		p
+			margin: 0
+			padding: 0
+
+/*** footer ***/
+#footer
+	font: 11px/1.7 $fontL
+	color: #A8A8A8
+	.partner-f
+		margin: 20px 0 0
+		header
+			color: 12px/1.2 $fontRM
+			color: #1E9D42
+		a
+			display: inline-block
+			margin: 20px 20px 0 0
+		img
+			filter: grayscale(100%)
+			&:hover
+				filter: grayscale(0%)
+	a.itena
+		background: url("../img/itena.png") 0 0 no-repeat
+		filter: grayscale(100%)
+		width: 68px
+		height: 27px		
+		display: inline-block
+		margin: 20px 0 0 0
+		&:hover, &:focus
+			filter: grayscale(0%)
+
+
+
+
+/*** social-2 ***/
+.social-2
+	position: absolute
+	z-index: 4
+	top: 12px
+	right: 21px
+	margin: 0
+	li
+		margin: 3px 0 0 7px
+		float: left
+		a
+			display: block
+			width: 20px
+			height: 20px
+			background: url("../img/social-2.png") 0 0 no-repeat
+		.soc-ok
+			background-position: 0 0
+		.soc-fb
+			background-position: -20px 0
+		.soc-vk
+			background-position: -40px 0
+		.soc-tw
+			background-position: -60px 0
+
+/*** img-round ***/
+.text-block
+	padding: 15px 19px
+	
+	.round-img
+		float: left
+		margin-right: 20px
+		max-width: 30%
+		img
+			border-radius: 100%
+			width: 100%
+			overflow: hidden
+
+.text-block2
+	padding: 0px 0px
+	font: 13px/1.4 Roboto;
+	.img
+		margin: 0px 19px 0px 0px
+		max-width: 275px
+		img 
+			width: 100%
+		& + p
+			margin-top: 15px
+	@media (max-width: 1024px)
+		.img
+			width: 35%
+			margin: 20px 19px 0px 20px
+	@media (max-width: 1024px)
+		.img
+			width: 30%
+	.green
+		color: #1E9D42
+	p
+		margin: 7px 19px 0
+	p:last-child
+		margin-bottom: 15px
+.photo
+	display: flex
+	flex-wrap: wrap
+	.fon
+
+		overflow: hidden
+		margin-top: 20px
+
+		img
+			width: 100%
+
+/*** map ***/
+#map
+	height: 410px
+	position: relative
+	z-index: 5
+
+/*** rec-block ***/
+.rec-block
+	padding: 21px 0 0px 0
+	.btn2
+		float: right
+		@media (max-width: 320px)
+			width: 100%
+			float: initial
+	.readmore
+		border-top: 1px solid #E9E9E9
+	
+.rec-item
+	position: relative
+	margin: 0px 30px 26px 20px
+	padding: 0px 0 0 58px
+	@media (max-width: 320px)
+		padding: 0
+		.events_titile
+			margin: 2px 0 6px 45px
+		.name-s
+			margin-left: 45px
+	.rec-item
+		margin-bottom: 0px 30px 26px 20px
+		padding: 0px 0 0 58px
+		@media (max-width: 320px)
+			margin: 0
+			padding: 0
+			header
+				padding: 13px 20px 0 50px
+			.plus
+				position: absolute
+				right: 12px
+				top: 8px
+			.minus
+				position: absolute
+				right: 0
+				top: 8px
+	@media (max-width: 320px)
+		margin: 0px 10px 26px 10px
+	header
+		border-top: 1px solid #E7E7E7
+		position: relative
+		padding: 13px 150px 0 0	
+		@media (max-width: 1023px)
+			padding: 13px 100px 0 0
+		@media (max-width: 320px)
+			padding: 13px 20px 0 50px
+	.name-s
+		font: 11px/13px $font
+		color: #525252
+		opacity: .5
+	h3, .h3
+		margin: 2px 0 6px 0
+		display: inline-block
+
+	textarea
+		height: 25px
+		padding: 0px 0 5px
+		margin: 12px 0 15px 0
+		overflow: hidden	
+	.date
+		display: inline-block
+		margin: 0 0 0 10px
+		opacity: .5
+		@media (max-width: 1023px)
+			display: block
+			margin: 0
+	.rating
+		position: absolute
+		right: 0
+		top: 13px
+		width: 100px
+		@media (max-width: 768px)
+			width: 70px
+	.text
+		margin: 9px 0 0
+		font: 13px/1.4 $font
+		@media (max-width: 320px)
+			width: 100%
+	.plus
+		float: right
+		margin: 0 16px 0 0
+		font: 13px/13px $fontRB		
+		a, a:visited
+			color: #1E9D42
+			text-decoration: none
+			span
+				display: block
+				float: right
+				width: 15px
+				height: 15px
+				background: url("../img/rating.png") 0 0 no-repeat
+				transition: none
+				margin: 0px 0 0 10px
+				@media (max-width: 768px)
+					display: none
+			&:hover, &:focus
+				span
+					background-position: 0 -15px
+	.minus
+		font: 13px/13px $fontRB		
+		float: right
+		a, a:visited
+			color: #DC1010
+			text-decoration: none
+			span
+				display: block
+				float: right
+				width: 15px
+				height: 15px
+				background: url("../img/rating.png") -15px 0 no-repeat
+				transition: none
+				margin: 3px 0 0 10px
+				@media (max-width: 768px)
+					display: none
+			&:hover, &:focus
+				span
+					background-position: -15px -15px
+	a.answer, a.answer:visited
+		text-decoration: none
+		color: #525252
+		border-bottom: 1px dotted #525252
+		opacity: .5
+		font-size: 11px
+	a.answer:hover, a.answer:focus
+		border-bottom: 1px dotted transparent
+		color: #525252
+.user-img
+	width: 40px
+	height: 40px
+	display: block
+	overflow: hidden
+	background: url("../img/user.png")	0 0 no-repeat
+	position: absolute
+	left: 0
+	top: 18px
+	border-radius: 100%
+
+form.rec-item
+	margin-bottom: 33px
+	& + .rec-item header
+		border-top: 1px solid transparent
+	.user-img
+		top: 3px
+.rec-item a.answer + .rec-item  header
+	border-top: 1px solid transparent
+
+
+/*** film ***/
+.inst
+	height: 347px
+	background: #fff
+	position: relative
+	margin: 20px 0 0
+	overflow: hidden
+	border-radius: 2px
+	box-shadow: 0 1px 2px rgba(204, 204, 204, 0.25)
+	@media (max-width: 768px)
+		height: 160px
+	&>a
+		max-width: 180px
+		max-height: 180px
+		border-radius: 100%
+		display: block
+		overflow: hidden
+		margin: 25px auto 0
+		img
+			width: 100%
+		@media (max-width: 768px)
+			max-width: 120px
+			max-height: 120px
+			margin: 20px
+			float: left
+	&>div
+		padding: 12px 21px
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		z-index: 10
+		background: #fff
+		transition: all .3s ease
+		@media (max-width: 768px)
+			left: 140px
+			top: 0
+		&>p
+			font: 11px/1 $font
+			color: #1E9D42
+			margin: -1px 0 0
+		
+		.comment
+			float: left
+			height: 14px
+			padding: 0 0 0 20px
+			margin: 5px 0  0 0
+			color: #231F20
+			font: 11px/1.2 $font
+			background: url("../img/film-comment.png") 0 0 no-repeat
+
+		.btn
+			float: right
+		footer
+			margin: 10px 0 0
+			.link
+				display: none
+		.active
+			.more
+				display: none
+			.link
+				display: block
+		header
+			.genre
+				font: 11px/1.2 $font
+				margin: 6px 0 0
+				height: 26px
+				overflow: hidden
+				opacity: .5
+				
+			.name
+				font: 16px/1 $fontRM
+				color: #4F4C4D
+				margin: 10px 0 0
+				height: 32px
+				overflow: hidden
+
+/*** schedule ***/
+.schedule
+	margin: 30px 20px
+	@media (max-width: 1023px)
+		margin: 20px 20px 0px
+		& + .schedule
+			margin: 15px 20px 15px
+	h3, .h3
+		margin: 0px 0 10px
+	.address
+		font: 11px/12px $font
+		color: #525252
+		opacity: .5
+	.sch-block
+		position: relative
+		padding: 0 0 0 65px
+	.type
+		position: absolute
+		left: 0
+		top: 5px
+		font: 10px/1.5 $fontBold
+		color: #B5B5B5
+		width: 58px
+		text-align: center
+	.sch-list
+		margin: -1px 0 25px
+		@media (max-width: 1023px)
+			margin: -1px 0 5px
+	.sch-item
+		display: inline-block
+		width: 50px
+		height: 25px
+		margin: 0 5px 8px 0
+		@media (max-width: 1023px)
+			width: 40px
+			height: 20px
+		a, a:visited, a:focus
+			font: 13px/23px $font
+			color: #4F4C4D
+			display: block
+			border: 1px solid #B5B5B5
+			border-radius: 2px
+			overflow: hidden
+			text-align: center
+			text-decoration: none
+			@media (max-width: 1023px)
+				font: 10px/18px $font
+		a:hover,
+		a.active, a.active:visited,
+		a.active:hover, a.active:focus
+			color: #fff
+			background: #1E9D42
+			border: 1px solid #1E9D42
+		a.disable, a.disable:visited,
+		a.disable:hover, a.disable:focus
+			color: #B5B5B5
+			border: 1px solid transparent
+			background: none
+
+/*** .iframe ***/
+.iframe
+	iframe
+		width: 100%
+		height: 480px
+		@media (max-width: 1023px)
+			height: 320px
+		@media (max-width: 480px)
+			height: 240px
+
+/* panel-heading */
+.select-submenu
+	&.navbar-nav > li
+		width: auto
+	&.nav li>a, &.nav li>a:focus, &.nav li>a:hover,
+	&.nav li.active>a, &.nav li.active>a:focus, &.nav li.active>a:hover,
+	&.nav .open>a, &.nav .open>a:focus, &.nav .open>a:hover
+		background: none
+		border-bottom: 0px solid transparent
+		color: #1E9D42
+		text-decoration: none
+		cursor: pointer
+	.submenu
+		display: none
+		position: absolute
+		left: 100% !important
+		top: 0 !important
+		width: auto !important
+	.dropdown-menu
+		padding: 0
+		border-top: 0px
+		border-color: #EDEDED
+		z-index: 50
+	.dropdown-menu>li 		
+		& a, & a:visited
+			color: #525252
+			text-decoration: none
+			padding: 10px 0
+			margin: 0 8px
+			border-top: 1px solid #E5E5E5
+			border-bottom: 0px
+		& a:hover, &:focus
+			border-bottom: 0px
+		&:first-child a
+			border-top: 0px
+	&.calendar, &.audience
+		&>li.dropdown
+			&>a
+				padding: 20px 0px 20px 0px
+				position: relative
+				color: #1E9D42
+				&:before
+					content: ""
+					display: block
+					float: left
+					margin: 0 10px 0 0
+					width: 19px
+					height: 19px
+					background: url("../img/calendar.png") 0 0 no-repeat
+	&.audience
+		&>li.dropdown
+			&>a
+				&:before
+					width: 13px
+					height: 14px
+					background: url("../img/audience.png") 0 0 no-repeat
+	@media (max-width: 767px)
+		&.navbar-nav .open .dropdown-menu
+			left: 0
+			top: 100%
+			background: #fff
+			bottom: inherit
+			border-color: #EDEDED
+	@media (max-width: 400px)
+		position: relative
+.sub-block.open
+	.submenu
+		display: block
+.select-submenu.navbar-nav .open .dropdown-menu
+	@media (max-width: 400px)
+		position: absolute
+		left: 0 !important
+		top: 100% !important
+.mycaret
+	width: 12px
+	height: 10px
+	display: block
+	float: right
+	margin: 3px 0 0 10px
+	background: url("../img/sprite-arrow.png") -24px 0 no-repeat
+.dropdown-menu .dropdown .mycaret
+	width: 6px
+	height: 10px
+	position: absolute
+	z-index: 50
+	top: 50%
+	margin: -5px 0 0
+	right: 10px
+	background-position: -6px -1px
+
+.dropdown-menu .dropdown a
+	&:hover, &:focus
+		.mycaret
+			background-position: -6px -11px
+
+.select-submenu
+	a:hover, a:focus
+		.mycaret
+			background-position: -12px 0px
+
+/* main page */
+.block3
+	margin: 25px 0 0
+	height: 50px
+	background: #ccc
+
+/* .news-item */
+.news-item
+	background: #FFFFFF
+	margin-top: 20px
+	border: 1px solid transparent
+	&:hover
+		border-color: #1E9D42
+		
+.news-item-img
+	margin: 0 0 0px 0
+	img
+		width: 100%
+.col-md-8>.news-item
+	.news-item-text 
+		padding: 17px 20px 17px 10px
+.news-item-text
+	padding: 28px 30px 26px
+	@media (max-width: 991px)
+		padding: 18px 20px 18px 10px
+		@media (max-width: 768px)
+			padding: 5px 10px 5px 0px
+	header
+		font: 11px/1.2 $font
+		color: #B5B5B5
+		@media (max-width: 768px)
+			font: 10px/1.2 $font
+		a, a:visited, a:hover, a:focus
+			text-decoration: none
+			color: #B5B5B5
+	.time
+		height: 12px
+		position: relative
+		margin: 0px 0 0
+		padding: 0 0 0 22px		
+		color: #B5B5B5				
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			left: 3px
+			top: 0
+			width: 12px
+			height: 12px
+			background: url("../img/reading-time.png") 0 0 no-repeat
+		@media (max-width: 768px)
+			padding: 0 0 0 15px
+			margin-right: -5px
+			&:before
+				left: 0
+	footer
+		margin: 36px 0 0
+		@media (max-width: 768px)
+			margin: 5px 0 0
+		font: 11px/1 $font
+		.razdel
+			position: relative
+			&, &:visited
+				color: #1E9D42
+				padding: 0 0 0 15px
+				text-decoration: none
+				&:before
+					content: ""
+					position: absolute
+					left: 0
+					top: 0
+					width: 7px
+					height: 10px
+					background: url('../img/razdel.png') 0 0 no-repeat
+			&:hover, &:focus
+				color: #1E9D42
+
+
+.news-item-name
+	font: 16px/1.2 $font
+	color: #4F4C4D
+	margin: 27px 0 0  0
+	padding: 0
+	height: 57px
+	overflow: hidden
+	a, a:visited
+		color: #4F4C4D
+		text-decoration: none 		
+	a:hover, a:focus
+		color: #4F4C4D
+
+.news-item2
+	.news-item-text
+		padding: 11px 10px 17px
+	
+	.news-item-name
+		margin: 2px 0 0
+		font: 13px/1.2 Roboto;
+		height: 32px
+	footer
+		margin: 28px 0 0
+.news-item3	
+	.news-item-text
+		padding: 10px 22px 11px
+	.news-item-name
+		margin: 2px 0 0
+		font: 13px/1.2 Roboto;
+		height: 32px
+		overflow: hidden
+	footer
+		margin: 16px 0 0
+
+.news-item4
+	.news-item-text
+		padding: 16px 15px 17px
+.content .news-item-name
+	@media (max-width: 768px)
+		margin-top: 0
+		font: 14px/1.2 $font
+		height: 57px 
+		overflow: hidden
+
+/* .birthday */
+.birthday
+	margin-top: 20px
+
+/* .video-link */
+.video-link
+	position: relative
+	display: block
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		z-index: 5
+		background: url("../img/play.png") center center no-repeat rgba(0, 0, 0, .2);
+
+/* .news-large */
+.news-large
+	margin-top: 20px
+
+

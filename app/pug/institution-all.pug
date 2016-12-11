@@ -1,0 +1,164 @@
+extends modules/template
+
+block title 
+	title Page A
+
+block content
+
+	include modules/mixin
+
+	.row
+		.col-md-9.col-sm-9.col-xs-12
+			h1 Все заведения
+			.panel-heading.clearfix
+				nav.navbar( role="navigation")
+					ul.nav.nav-tabs.navbar-nav.select-submenu.calendar
+						+nav_item_dropdown("#")( label="Сегодня")
+							+nav_item_tab("#date2") Сегодня 2
+							+nav_item_tab("#date3") Завтра
+							+nav_item_tab("#date4") Послезавтра
+							+nav_item_dropdown( "#" )(label="Выбрать дату") 
+								li
+									.datepicker
+									
+					ul.nav.nav-tabs.navbar-nav.select-submenu.audience
+						+nav_item_dropdown( "#" )( label="Кому?")
+							+nav_item_tab("#date2") Детям
+							+nav_item_tab("#date3") Детям 2
+							+nav_item_tab("#date4") Детям 3
+			.panel-body
+				.tab-content
+					.tab-pane.fade.in.active#date1
+						.title
+							h2 Кафе
+							a.pull-right(href="#") Все  (456)
+						.row
+							.col-md-4.col-sm-6.col-xs-12
+								+inst('#', "upload/inst-1.jpg", "Марбелья", "г. ЛИпецк, ул. Ленина, 36")
+							.col-md-4.col-sm-6.col-xs-12
+								+inst('#', "upload/inst-2.jpg", "Марбелья", "г. ЛИпецк, ул. Ленина, 36")
+							.col-md-4.hidden-sm.hidden-xs
+								+inst('#', "upload/inst-3.jpg", "Марбелья", "г. ЛИпецк, ул. Ленина, 36")
+							.col-md-12.col-sm-12.xol-xs-12
+								a.readmore(href="#")
+									span.clearfix
+										span.film-button
+										| Еще
+
+					.tab-pane.fade#date2 
+						h2 Завтра
+						.row
+							.col-md-4.col-sm-6.col-xs-12
+								+inst('#', "upload/inst-1.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+							.col-md-4.col-sm-6.col-xs-12
+								+inst('#', "upload/inst-2.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+							.col-md-4.hidden-sm.hidden-xs
+								+inst('#', "upload/inst-3.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+							.col-md-12.col-sm-12.xol-xs-12
+								a.readmore(href="#")
+									span.clearfix
+										span.inst-button
+										| Еще
+					.tab-pane.fade#date3 
+						h2 Послезавтра
+						.row
+							.col-md-4.col-sm-6.col-xs-12
+								+inst('#', "upload/inst-1.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+							.col-md-4.col-sm-6.col-xs-12
+								+inst('#', "upload/inst-2.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+							.col-md-4.hidden-sm.hidden-xs
+								+inst('#', "upload/inst-3.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+							.col-md-12.col-sm-12.xol-xs-12
+								a.readmore(href="#")
+									span.clearfix
+										span.inst-button
+										| Еще
+					.tab-pane.fade#date4 
+						h2 Скоро!
+						.row
+							.col-md-4.col-sm-6.col-xs-12
+								+inst('#', "upload/inst-1.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+							.col-md-4.col-sm-6.col-xs-12
+								+inst('#', "upload/inst-2.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+							.col-md-4.hidden-sm.hidden-xs
+								+inst('#', "upload/inst-3.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+							.col-md-12.col-sm-12.xol-xs-12
+								a.readmore(href="#")
+									span.clearfix
+										span.inst-button
+										| Еще
+
+			.row
+				.col-md-8.col-sm-12.col-xs-12
+					.banner-s
+						a(href="#"): img(src="upload/banner-m.jpg" alt="")
+				.col-md-4.hidden-sm.hidden-xs
+					.banner-s
+						a(href="#"): img(src="upload/banner-s.jpg" alt="")
+			.title
+				h2 Кафе
+				a.pull-right(href="#") Все  (456)
+			#exhibition.row
+				.col-md-4.col-sm-6.col-xs-12
+					+inst('#', "upload/inst-1.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+				.col-md-4.col-sm-6.col-xs-12
+					+inst('#', "upload/inst-2.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+				.col-md-4.hidden-sm.hidden-xs
+					+inst('#', "upload/inst-3.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+
+			.title
+				h2 Кинотеатры
+				a.pull-right(href="#") Все  (456)
+			#concert.row
+				.col-md-4.col-sm-6.col-xs-12
+					+inst('#', "upload/inst-1.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+				.col-md-4.col-sm-6.col-xs-12
+					+inst('#', "upload/inst-2.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+				.col-md-4.hidden-sm.hidden-xs
+					+inst('#', "upload/inst-3.jpg", "Не дыши", "г. ЛИпецк, ул. Ленина, 36")
+
+			h2 Последние отзывы о заведениях
+			.fon
+				.row.recall-block
+					.col-md-4.col-sm-6.col-xs-12
+						+recall("Кафе щепкин") Грабители забираются в дом одинокого слепого старика с целью украсть огромную сумму, которая, по слухам, спрятана где-то внутри. Казалось бы — что может быть						
+					.col-md-4.col-sm-6.col-xs-12
+						+recall("Сказки аделиады и шехеризады") Грабители забираются в дом одинокого слепого старика с целью украсть огромную сумму, которая, по слухам, спрятана где-то внутри. Казалось бы — что может быть одинокого слепого старика с целью украсть огромную сумму, которая, по слухам, спрятана где-то внутри. Казалось бы — что может бытьКазалось бы — что может быть
+					.col-md-4.col-sm-6.col-xs-12
+						+recall("Сказки аделиады и шехеризады") Грабители забираются в дом одинокого слепого старика с целью украсть огромную сумму, которая, по слухам, спрятана где-то внутри. Казалось бы — что может бытьКазалось бы — что может быть
+					.col-md-4.col-sm-6.col-xs-12
+						+recall("Кафе щепкин") Грабители забираются в дом одинокого слепого старика с целью украсть огромную сумму, которая, по слухам, спрятана где-то внутри. Казалось бы — что может быть			Казалось бы — что может быть			
+					.col-md-4.col-sm-6.col-xs-12
+						+recall("Сказки аделиады и шехеризады") Грабители забираются в дом одинокого слепого старика с целью украсть огромную сумму, которая, по слухам, спрятана где-то внутри. Казалось бы — что может бытьКазалось бы — что может быть
+					.col-md-4.col-sm-6.col-xs-12
+						+recall("Сказки аделиады и шехеризады") Грабители забираются в дом одинокого слепого старика с целью украсть огромную сумму, которая, по слухам, спрятана где-то внутри. Казалось бы — что может быть
+
+		.col-md-3.col-sm-3.hidden-xs
+			.banner-s.margin0
+				a(href="#"): img(src="upload/banner-right.jpg" alt="")
+			.banner-s
+				a(href="#"): img(src="upload/banner-s.jpg" alt="")
+			.reading.fon
+				header: a(href="#") Сейчас читают
+				.item
+					a(href="#") Водители в Липецке поддались массовому психозу (ВИДЕО)
+					.time
+						| 1,5 часа
+				.item
+					a(href="#") В Липецке медсестру вынудили уволиться за фото в социальной сети
+					.time
+						| 1,5 часа
+				.item
+					a(href="#") После рекордной жары в Липецке ждут грозу
+					.time
+						| 1,5 часа
+				.item
+					a(href="#") Липецкая студентка задержана за поджог автомобиля
+					.time
+						| 1,5 часа
+				.item
+					a(href="#") Водители в Липецке поддались массовому психозу (ВИДЕО)
+					.time
+						| 1,5 часа
+			.fon
+				img(src="upload/yandex.jpg" alt="")

@@ -1,0 +1,290 @@
+.btn
+	font: 13px/1.5 $font
+	padding: 1px 15px 2px
+	color: #1E9D42
+	text-decoration: none
+	border: 1px solid #1E9D42
+	border-radius: 2px
+	background: transparent
+	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0)
+	transition: all .2s ease-out
+	&:visited
+		color: #1E9D42
+		border: 1px solid #1E9D42
+	&:hover, &:focus
+		color: #fff
+		border: 1px solid #1E9D42
+		background: #1E9D42
+		box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25)
+
+.btn2
+	font: 13px/1.5 $font
+	padding: 9px 16px 10px
+	color: #4F4C4D
+	text-decoration: none
+	border: 1px solid #4F4C4D
+	border-radius: 2px
+	background: transparent
+	box-shadow: 2px 4px 5px rgba(0, 0, 0, 0)
+	transition: all .2s ease-out
+	&:visited
+		color: #1E9D42
+		border: 1px solid #1E9D42
+	&:hover, &:focus
+		color: #fff
+		border: 1px solid #1E9D42
+		background: #1E9D42
+		box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25)
+
+/*** slick slider ***/
+.slick-slider
+	margin: 20px 0 0px 0
+	border-radius: 2px
+	overflow: hidden
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2)
+.slick-dots
+	margin: 0 0 0
+	position: absolute
+	right: 34px
+	top: 20px
+	li
+		float: left
+		margin: 0 0 0 9px
+		@media (max-width: 446px)
+			margin: 0 0 0 3px
+		button
+			width: 12px
+			height: 12px
+			border-radius: 100%
+			border: 1px solid #FFFFFF
+			background: transparent
+			font-size: 0px
+			padding: 0
+			@media (max-width: 446px)
+				width: 6px
+				height: 6px
+		&.slick-active
+			button
+				background: #fff
+	@media (max-width: 446px)
+		top: 0
+		right: 11px
+.slick-item
+	position: relative	
+	color: #fff	
+
+	img
+		width: 100%
+		@media (max-width: 446px)
+			width: 128%
+
+	&>div
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		padding: 25px 42px
+		@media (max-width: 600px)
+			padding: 15px 22px
+		@media (max-width: 446px)
+			padding: 9px !important
+	.genre
+		font: 13px/1.2 $fontRM
+		@media (max-width: 446px)
+			font-size: 10px
+
+	.name
+		font: 48px/1 $fontRE
+		margin: 9.5% 0 0
+		@media (max-width: 1023px)
+			margin: 7.5% 0 0
+			font: 28px/1 $fontRE
+		@media (max-width: 600px)
+			margin: 5.5% 0 0
+			font: 18px/1 $fontRE
+	.pre-date
+		font: 24px/1 $fontRM
+		margin: 3% 0 0 0
+		@media (max-width: 600px)
+			font: 14px/1 $font
+			width: 50%
+		@media (max-width: 446px)
+			font-size: 12px
+			width: 70%
+			margin: 2% 0 0 0
+	@media (max-width: 446px)
+		min-height: 150px
+
+
+	footer
+		position: absolute
+		bottom: 33px
+		left: 38px
+		right: 35px
+		@media (max-width: 600px)
+			left: 20px
+			right: 20px
+			bottom: 15px
+		.date
+			font: 10px/1.3 $font
+			float: left
+			margin: 0 35px 0 0
+			@media (max-width: 467px)
+				margin: 0 15px 0 0
+			span
+				width: 16px
+				height: 16px
+				display: block
+				float: left
+				margin: 0 8px 0 0
+				background: url("../img/sprite-slick.png") 0 0 no-repeat
+		@media (max-width: 467px)
+			bottom: 5px
+			left: 9px
+
+		.comment
+			font: 10px/1.3 $font
+			float: left
+			span
+				width: 16px
+				height: 16px
+				display: block
+				float: left
+				margin: 0 3px 0 0
+				background: url("../img/sprite-slick.png") -16px 0 no-repeat
+
+		.btn
+			position: absolute
+			right: 0
+			bottom: 0
+			font: 16px/1.2 $font
+			color: #fff
+			border: 1px solid #fff
+			padding: 10px 36px 8px
+			&:visited
+				color: #fff
+				border: 1px solid #fff
+			&:hover, &:focus
+				color: #1E9D42
+				border: 1px solid #1E9D42
+				background: #fff
+			@media (max-width: 600px)
+				padding: 10px 15px 8px
+			@media (max-width: 446px)
+				padding: 3px 8px
+				font-size: 10px
+
+
+/*** nav-tabs ***/
+.panel-heading
+	margin: 20px 0 0px 0	
+	padding: 0
+	border: 0px
+	background: #fff
+	box-shadow: 0 1px 2px rgba(204, 204, 204, 0.25)
+	position: relative
+	z-index: 40
+.panel-body
+	padding: 0
+.nav-tabs
+	border: 0px
+	padding: 0 17px
+	float: left
+	position: relative
+	z-index: 5
+	&>li
+		border: 0px
+		margin: 0 23px 0 0
+		&>a, &>a:visited
+			font: 13px/1.2 $fontRB
+			color: #4F4C4D
+			border: 0px
+			border-bottom: 3px solid transparent
+			text-decoration: none	
+			padding: 20px 3px 20px
+		&.green a, &.green a:visited
+			color: #DC1010
+		&.purple a, &.purple a:visited
+			color: #B91DEC
+		&.red a, &.red a:visited
+			color: #DC1010
+	&>li.active>a, &>li.active>a:focus, &>li.active>a:hover,
+	&>li>a:hover, &>li>a:focus
+		color: #1E9D42
+		background: none
+		border: 0px
+		border-bottom: 3px solid #1E9D42
+.anchor
+	&>li
+		&>a, &>a:visited
+			border-bottom: 3px dotted transparent
+			padding: 2px 3px 2px
+			margin: 18px 0 18px
+	
+	&>li.active>a, &>li.active>a:focus, &>li.active>a:hover,
+	&>li>a:hover, &>li>a:focus
+		border-bottom: 1px dotted #1E9D42
+	@media (max-width: 1023px)
+		height: 58px
+		&>li
+			display: none
+
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th
+	padding: 2px 5px
+.datepicker table tr td.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active:hover,
+.datepicker table tr td.active.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active.disabled:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active:active, .datepicker table tr td.active:hover, .datepicker table tr td.active:hover.active, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active[disabled]
+	background: #1E9D42
+
+
+
+/* .datepicker */		
+.datepicker
+	display: block
+	background: #fff
+.datepicker-inline
+	padding: 10px 20px	
+	width: auto
+	min-width: 220px
+.datepicker table tr td span
+	height: 34px
+	line-height: 34px
+
+.datepicker table tr td.day.focused, .datepicker table tr td.day:hover,
+.datepicker table tr td span.focused, .datepicker table tr td span:hover
+	background: #1E9D42
+	color: #fff
+.table-condensed > thead > tr > th.dow
+	color: #1E9D42
+.datepicker .datepicker-switch:hover, .datepicker .next:hover, .datepicker .prev:hover, .datepicker tfoot tr th:hover
+	background: none
+.datepicker .prev, .datepicker .next
+	font-size: 0px
+	background: none
+	&:before
+		content: ""
+		display: block
+		width: 6px
+		height: 11px
+		background: url('../img/sprite-arrow.png') 0 0 no-repeat
+.datepicker .prev
+	&:before
+		background-position: 0 -1px
+	&:hover:before
+		background-position: 0 -11px
+.datepicker .next
+	&:before
+		background-position: -6px -1px
+	&:hover:before
+		background-position: -6px -11px
+.datepicker table thead 
+	tr:nth-child(2)
+		border-bottom: 1px solid #E5E5E5
+		th
+			padding-bottom: 10px
+	tr:nth-child(3)
+		th
+			padding-top: 10px
+
+.addVisible
+	display: block !important

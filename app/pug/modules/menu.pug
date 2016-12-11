@@ -1,0 +1,100 @@
+include mixin
+.col-md-9.col-sm-9.col-xs-12
+	+nav("dropdown_menu")
+		li
+			a(href="#") Ещё
+			ul
+		+nav_item_dropdown( "#", "active" )( label="Новости")
+			+nav_item( "#") test name
+			+nav_item_sub( "#" )(label="Новости2")
+				.dropdown-submenu
+					.row
+						.col-md-4.col-sm-12
+							.news-item: .row
+								.news-item-img.col-md-12.col-sm-6
+									a(href="#"): img(src="upload/news-item.jpg" alt="")
+								.news-item-text.col-md-12.col-sm-6
+									header
+										.row
+											.col-md-6.col-sm-6
+												a(href="#") #Недвижимость
+												br
+												a(href="#") #Грабеж
+											.col-md-6.col-sm-6
+												.time сегодня, 09:30
+									.news-item-name
+											a(href="#") Липецкую управляющую компанию офштрафовали на 100 тысяч рублей
+									footer
+										a.razdel(href="#") Общество
+						.col-md-8.col-sm-12
+							.news-item: .row
+								.news-item-img.col-md-6.col-sm-6
+									a(href="#"): img(src="upload/news-item.jpg" alt="")
+								.news-item-text.col-md-6.col-sm-6
+									header
+										.row
+											.col-md-12.col-sm-12
+												a(href="#") #Недвижимость
+												br
+												a(href="#") #Грабеж													
+									.news-item-name
+											a(href="#") Липецкую управляющую компанию офштрафовали на 100 тысяч рублей
+									footer
+										.row
+											.col-md-6.col-sm-6
+												.time сегодня, 09:30
+											.col-md-6.col-sm-6
+												a.razdel(href="#") Общество
+						
+							.news-item: .row
+								.news-item-img.col-md-6.col-sm-6
+									a(href="#"): img(src="upload/news-item.jpg" alt="")
+								.news-item-text.col-md-6.col-sm-6
+									header
+										.row
+											.col-md-12.col-sm-12
+												a(href="#") #Недвижимость
+												br
+												a(href="#") #Грабеж													
+									.news-item-name
+											a(href="#") Липецкую управляющую компанию офштрафовали на 100 тысяч рублей
+									footer
+										.row
+											.col-md-6.col-sm-6
+												.time сегодня, 09:30
+											.col-md-6.col-sm-6
+												a.razdel(href="#") Общество
+			+nav_item( "#") test name
+			+nav_item( "#") Тest name long test name
+			+nav_item( "#") Тest name long test name
+			+nav_item( "#") test name
+		+nav_item_dropdown( "#")( label="Видео") 
+		+nav_item( "#" )
+			img(src="upload/menu-item-2.png" alt="")
+		+nav_item_dropdown( "#" )( label="Объявления")
+			+nav_item( "#" ) Long test name
+			+nav_item( "#" ) Test test name name name
+			+nav_item( "#" ) Long test name
+			+nav_item( "#" ) Test test name name name
+		+nav_item_dropdown( "#" )( label="Справочник")
+			+nav_item( "#" ) Long test name
+			+nav_item( "#" ) Test test name name name
+			+nav_item( "#" ) test name
+			+nav_item( "#" ) Long test name
+		+nav_item_dropdown( "#" )( label="Афиша")
+			+nav_item( "#" ) Test test name name name
+			+nav_item( "#" ) test name
+			+nav_item( "#" ) Long test name
+			+nav_item( "#" ) Отзывы
+			+nav_item( "#" ) FAQ
+		+nav_item( "#" ) Выходной маршрут
+		+nav_item( "#" ) Web-камера
+		+nav_item( "#" ) Topnews
+		+nav_item( "#" ) Бизнес
+		+nav_item( "#" ) Гороскоп
+		+nav_item( "#" ) Власть
+.col-md-3.col-sm-3.hidden-xs
+	ul.head-block
+		li.offer: a(href="#")
+		li.login: a(href="#")
+		li.search: a(href="#")

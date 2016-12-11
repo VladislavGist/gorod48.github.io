@@ -1,0 +1,260 @@
+.main-menu
+	position: relative
+	z-index: 50
+	border-radius: 2px
+	@media (min-width: 769px)
+		height: 50px
+	.row
+		&>div
+			position: initial
+	/* @media (max-width: 768px)
+		height: 0 */
+	
+/*** .navbar-default  ***/
+.navbar
+	position: initial
+	margin: 0
+	min-height: 0px
+	background: #fff
+	@media (min-width: 769px)
+		height: 50px
+		min-height: 50px
+.navbar-default
+	background: none
+	border: 0px
+	& .navbar-nav>.active>a,
+	& .navbar-nav>.active>a:focus, 
+	& .navbar-nav>.active>a:hover, & .navbar-nav>li>a:focus, 
+	& .navbar-nav>li>a:hover, & .navbar-nav>.open>a, & .navbar-nav>.open>a:focus, 
+	& .navbar-nav>.open>a:hover	
+		background: none
+		color: #BABABA
+		border-bottom: 3px solid #1E9D42
+		text-decoration: none
+		
+	& .navbar-nav>li>a, & .navbar-text
+		color: #818181
+		height: 50px
+		border-bottom: 3px solid transparent
+		background: none
+		padding: 0 10px 0
+		color: #818181
+		font: 13px/50px $fontRM
+		text-decoration: none
+		position: initial
+		@media(max-width: 768px)
+			height: 40px
+			font: 13px/40px $fontRM;
+		@media(max-width: 480px)
+			height: 40px
+			font: 12px/40px $fontRM;
+	& .navbar-nav>li
+		margin: 0 0px 0 0
+		&.substyle
+			display: none
+			margin-top: 50px
+			&.show
+				display: block
+				float: none
+			& + .substyle
+				margin-top: 0
+		&.else .substyle
+			display: block
+
+	.nav>li, .nav>li>a
+		position: initial
+
+	& .navbar-toggle
+		background: #fff		
+
+	& .navbar-toggle:focus, & .navbar-toggle:hover
+		background: $colorLink1
+		border-color: $colorLink1
+		& .icon-bar
+			border-top: 1px solid #fff
+
+.main-menu .dropdown-menu
+	background: #231F20
+	border: 0px
+	background: none
+	box-shadow: none
+	padding: 0px 0px
+	margin: 0
+	z-index: 1 
+	left: 0
+	right: 0
+	box-shadow: 0 5px 25px -15px rgba(0, 0, 0, .5)
+	&>li
+		z-index: 5
+		&.submenu.open>a, &.submenu.open>a:hover,
+		&.submenu.open>a:focus
+			background: #EFF1F1
+			color: #1E9D42;
+			border-left: 3px solid #1E9D42;
+
+	&>li>a
+		color: #FFFFFF
+		background: #231F20
+		text-decoration: none
+		font: 13px/16px $fontRM
+		padding: 14px 28px
+		border-left: 3px solid transparent
+		transition: none
+		@media(max-width: 768px)
+			font: 13px/40px $fontRM;
+		@media(max-width: 480px)
+			font: 12px/40px $fontRM;
+		&:focus, &:hover
+			background: #F6F6F6
+			color: #1E9D42
+			border-left: 3px solid #1E9D42
+
+@media (max-width: 767px)
+	.navbar-collapse
+		overflow-x: hidden
+	.navbar-nav
+		margin-top: -1px
+		position: relative
+		&>li
+			background: #fff
+			width: 50%
+	.main-menu
+		.navbar-nav
+			background: #231F20
+
+.main-menu .navbar-nav .open .dropdown-menu
+	@media (min-width: 768px)
+		background: #231F20;
+
+.navbar-nav .open .dropdown-menu
+	@media (min-width: 768px)
+		width: 100%
+		box-shadow: 0 5px 25px -15px rgba(0, 0, 0, .5)
+		&>li
+			a
+				max-width: 300px
+				position: relative
+				z-index: 10
+		.dropdown-menu
+			position: absolute
+			left: 300px
+			top: 0
+	@media (max-width: 767px)
+		position: absolute
+		float: none
+		width: auto
+		top: 0%
+		bottom: 0
+		right: 0
+		left: 50%
+		border: 0
+		box-shadow: none
+		margin: 0
+		padding: 0
+		z-index: 15
+
+		&>li>a
+			padding: 10px 20px
+.main-menu .navbar-nav .open .dropdown-menu .dropdown-menu
+	@media (max-width: 767px)
+		display: none !important
+
+
+.navbar-collapse
+	background: #fff
+	border-top: 0px
+
+.navbar-toggle
+	float: left
+	width: 25px
+	height: 25px
+	margin: -40px 0 0 10px
+	padding: 2px 3px
+	border-radius: 100%
+	border: 2px solid #259E42 !important
+	.icon-bar
+		width: 15px
+		background: #259E42 !important
+		transform: rotate(0)
+		transition: all .3s ease-out
+		border: 0px
+		& + .icon-bar
+			margin-top: 2px
+.navbar-default .navbar-toggle:focus .icon-bar, 
+.navbar-default .navbar-toggle:hover .icon-bar
+	border: 0px solid #fff
+	background: #fff !important
+.navbar-default .navbar-toggle:not(.collapsed)
+	.icon-bar:nth-child(2)
+		transform: rotate(45deg)
+		margin: -1px 0 0 0
+		position: absolute
+	.icon-bar:nth-child(3)
+		transform: rotate(-45deg)
+		margin: -1px 0 0 0
+		position: absolute
+	.icon-bar:nth-child(4)
+		display: none
+
+
+@media (max-width: 767px)
+	.main-menu
+		.navbar-default .navbar-nav .open .dropdown-menu>li>a
+			color: #fff
+			&:hover, &:focus
+				background: #fff
+				color: #259E42
+		.navbar-default
+			background: none
+			border: 0px
+			& .navbar-nav>.active>a,
+			& .navbar-nav>.active>a:focus, 
+			& .navbar-nav>.active>a:hover, & .navbar-nav>li>a:focus, 
+			& .navbar-nav>li>a:hover, & .navbar-nav>.open>a, & .navbar-nav>.open>a:focus, 
+			& .navbar-nav>.open>a:hover
+				background: none
+				color: #BABABA
+				border-bottom: 3px solid transparent
+				border-left: 3px solid #1E9D42
+				text-decoration: none
+				@media(max-width: 768px)
+					height: 40px
+					font: 13px/40px $fontRM;
+					background: #231F20
+					color: #fff
+				@media(max-width: 480px)
+					font: 12px/40px $fontRM;
+
+			& .navbar-nav>li>a, & .navbar-text
+				color: #818181
+				border-left: 3px solid transparent
+
+.dropdown-submenu
+	display: none
+	@media (min-width: 768px)
+		&:before
+			content: ""
+			display: block
+			width: 300px
+			position: absolute
+			left: 0
+			top: 0
+			bottom: 0
+			background: #231F20
+.submenu:hover>.dropdown-submenu,
+.submenu:focus>.dropdown-submenu,
+.submenu.open>.dropdown-submenu
+	@media (min-width: 768px)
+		display: block
+		position: absolute
+		z-index: 5
+		left: 0px
+		top: 0px
+		right: 0px
+		padding: 0px 20px 20px 320px
+		background: #EFF1F1
+		width: auto
+		box-shadow: 0 5px 25px -15px rgba(0, 0, 0, .5)
+
+.dropdown, .dropup
+	z-index: 50
